@@ -1,0 +1,125 @@
+.header-wrapper-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  position: relative;
+  .wrapper-menu {
+    flex: 1 0 83.34%;
+    min-height: 47px;
+    background: #eaeff3;
+    position: relative;
+    .row {
+      height: 100%;
+
+     li{
+      padding-right: 50px;
+      &:first-child{
+
+        a {
+          color:#171b1f;
+        }
+      }
+     }
+   }
+  }
+  .wrapper-sign-up {
+    flex: 1 1 16.66%;
+    min-height: 47px;
+    background: #36a8ff;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    .icon-key {
+      padding-left: 50px;
+      position: relative;
+      a{color: #ffffff;}
+      &:before {
+        font-family: 'simple-line-icons', inherit;
+        position: absolute;
+        left: 25px;
+        top: 5px;
+        content: "\e08c";
+        font-weight: 600;
+        color:#ffffff;
+      }
+    }
+  }
+  .wrapper-logo {
+    flex: 1 0 100%;
+    min-height: 80px;
+    background: #ffffff;
+    img {
+      min-height: 34px;
+      min-width: 164px;
+    }
+  }
+}
+
+.header-background {
+  position: relative;
+  background: #eaeff3;
+  width: 100%;
+  min-height: 50px;
+  .menu {
+    position: relative;
+    width: 100%;
+    min-height: 50px;
+    height: inherit;
+    .row{
+      min-height: 50px;
+      height: inherit;
+      li{
+        padding-right: 50px;
+        &:first-child{
+
+          a {
+            color:#171b1f;
+          }
+        }
+      }
+    }
+  }
+  .sign{
+    position: absolute;
+    width: 100%;
+    min-height: 50px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    .flex-wrapper{
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      height: inherit;
+      .hole{
+        width: 1390px;
+        flex: 10 6 73%;
+        min-height: 50px;
+        height: inherit;
+      }
+      .icon{
+        width: 580px;
+        background: #36a8ff;
+        flex: 4 1 27%;
+        min-height: 50px;
+        height: inherit;
+        .icon-key {
+          padding-left: 50px;
+          position: relative;
+          a{color: #ffffff;}
+          &:before {
+            font-family: 'simple-line-icons', inherit;
+            position: absolute;
+            left: 25px;
+            top: 5px;
+            content: "\e08c";
+            font-weight: 600;
+            color:#ffffff;
+          }
+        }
+      }
+    }
+  }
+}
