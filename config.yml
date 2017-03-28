@@ -28,7 +28,8 @@ PATHS:
     - "bower_components/foundation-sites/scss"
     - "bower_components/motion-ui/src"
     - "bower_components/simple-line-icons/scss/simple-line-icons.scss"
-    - "bower_components/font-awesome/scss/font-awesome.scss"
+   # - "bower_components/font-awesome/scss/font-awesome.scss"
+    #- "bower_components/font-awesome/scss/variables.scss"
   # Paths to JavaScript libraries, which are combined into one file
   javascript:
     # Libraries required by Foundation

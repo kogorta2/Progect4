@@ -1,0 +1,200 @@
+.banner{
+  position: relative;
+  width: 100%;
+  max-height: 707px;
+  .banner-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    img{
+      top:0;
+      left:0;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  .banner-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    .banner-content {
+      width: 100%;
+      height: 100%;
+      .we-are {
+        display: inline-block;
+        text-align: center;
+        width: 40%;
+        max-height: 45px;
+        background: #ffaf36;
+        padding: 10px 5px;
+        h5{
+          color:#ffffff;
+        }
+      }
+      .welcome {
+        width: 100%;
+        background: #36a8ff;
+        .welcome-content{
+          padding: 9.82% 13.1% 11.52% 6.55%;
+          h2{
+            padding-bottom:14px;
+          }
+          p{
+            margin:0;
+            color:#ffffff;
+          }
+        }
+      }
+      .button{
+        transform: translate(325%,-100%);
+        a{
+          color:#ffffff;
+        }
+      }
+    }
+  }
+}
+
+.img{
+  background: #0e111a;
+  position: relative;
+  width: auto;
+  img{
+    position: relative;
+    opacity: 0.439;
+  }
+  &:before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(55, 168, 255, 0.5) 1%, rgba(255, 175, 55, 0.5) 100%, rgba(255, 175, 55, 0.5) 100%, rgba(255, 175, 55, 0.5) 100%);
+    //.Layer_18 {
+    //  background-image: url("Layer 18.png");
+    //  opacity: 0.439;
+    //  position: absolute;
+    //  left: 0px;
+    //  top: 0px;
+    //  width: 260px;
+    //  height: 161px;
+    //  z-index: 1;
+    //}
+  }
+  .gradient{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   // background: #cc4b37;
+    top:0;
+    left: 0;
+    .icon-wrapper{
+      padding-bottom: 10px;
+    }
+    h5{
+      color: rgba(255,255,255,0.5);// #ffffff;
+      letter-spacing: 3px;
+      font-weight: 900;
+    }
+  }
+  //&:after{
+  //  content: "";
+  //  position: absolute;
+  //  top:0;
+  //  left:0;
+  //  width: 100%;
+  //  height: 100%;
+  //}
+}
+
+@media screen and (max-width:500px ) {
+  .header-background{
+    .sign{
+      .icon-key{
+        a{
+           font-size: 80%;
+           line-height: 80%;
+        }
+      }
+    }
+  }
+  .header-contact{
+    .box{
+        h3{
+          font-size: 90%;
+        }
+    }
+  }
+  .banner{
+    .banner-container{
+      .we-are{
+        h5{
+        font-size: 80%;
+        line-height: 80%;
+        }
+      }
+      .welcome{
+        h2{
+        font-size: 90%;
+        }
+        p{
+          font-size: 90%;
+          line-height: 98%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:878px ) {
+  .header-background {
+    .menu {
+      .li-border {
+        display: none;
+      }
+    }
+  }
+  .header-contact{
+    .mail-us-today{
+      .gray-border{
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1023px){
+  .banner{
+    .banner-container{
+      position: relative;
+      .banner-content{
+        .button{
+          position: absolute;
+          left:-40%;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,11 +1,14 @@
 body,html {
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Lora', serif;
-  font-family: 'Roboto Slab', serif;
-  font-family: 'Karla', sans-serif;
+  //font-family: 'Open Sans', sans-serif;
+  //font-family: 'Raleway', sans-serif;
+  //font-family: 'Lora', serif;
+  //font-family: 'Roboto Slab', serif;
+  //font-family: 'Karla', sans-serif;
   overflow: hidden;
+  //font-size: 100%;
+//  line-height: 100%;
   width: 100%;
+  height: 30000px;
 }
 
 p {
@@ -52,7 +55,7 @@ h5 {
 }
 
 h6 {
-  font: 400i 16px/30px 'Lora', serif;
+  font: italic 400 16px/30px 'Lora', serif;
   color: #1c1c1c;
 }
 
@@ -66,7 +69,7 @@ li {
 }
 
 .call-us {
-  font: 600 11px/24 'Open Sans', sans-serif;
+  font: 600 11px/24px 'Open Sans', sans-serif;
   color: #96a2ac;
   text-transform: uppercase;
 }
