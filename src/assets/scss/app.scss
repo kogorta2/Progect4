@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 
 @import 'settings';
 @import 'foundation';
@@ -53,7 +53,7 @@
 
 @import "components/reset";
 @import "vendor/slick";
-@import "vendor/simple-line-icons";
+//@import "vendor/simple-line-icons";
 //@import "vendor/font-awesome";
 @import "components/variables";
 @import "components/landing/header";
