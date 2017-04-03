@@ -1,4 +1,4 @@
-.header-background {
+.header-variant {
   position: relative;
   background: #eaeff3;
   width: 100%;
@@ -9,9 +9,48 @@
     width: 100%;
     min-height: 46px;
     height: inherit;
+    ul{
+      @include breakpoint(1024px down){
+        position: absolute;
+        min-width:90px ;
+        bottom: 0;
+        left:0;
+        background:#eaeff3;
+        transition:all ease-in-out 0.2s;
+        &.click-off{
+          display: none;
+        }
+        &.click-on{
+          transform: translateY(100%);
+          z-index:1;
+        }
+        li{
+          display: block;
+          text-align: center;
+        }
+      }
+    }
     .row{
       min-height: 46px;
       height: inherit;
+      .burger-button{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 46px;
+        min-width: 46px;
+        position: relative;
+        z-index: 2;
+        background: #36a8ff;
+        color:#ffffff;
+        @include breakpoint(1025px up){
+          display:none;
+        }
+        &:before{
+          content:"\f0c9";
+          font:700 24px/1 'FontAwesome';
+        }
+      }
       li{
         position: relative;
         padding-right: 5%;
@@ -41,7 +80,6 @@
     border-bottom: 1px solid #dde4ea;
     .flex-wrapper{
       display: flex;
-      justify-content: flex-end;
       width: 100%;
       height: inherit;
       .hole{
@@ -52,8 +90,9 @@
       }
       .icon{
         width: 580px;
+        min-width: 180px;
         background: #36a8ff;
-        flex: 4 1 29.44%;
+        flex: 4 0 29.44%;
         min-height: 46px;
         height: inherit;
         .icon-key {
@@ -74,10 +113,10 @@
     }
   }
 }
-.header-contact {
+.contact {
   margin-bottom: 17px;
   .logo {
-      padding-bottom: 4px;
+    padding-bottom: 4px;
     .fa {
       position: absolute;
       left: 0;
@@ -115,7 +154,9 @@
         position: relative;
         padding-left: 20%;
         white-space: nowrap;
+        // font-stretch: condensed;
         line-height: 13px;
+        // transform:scaleX(0.9);
         &:first-child {
           font: 600 11px/24px 'Open Sans', sans-serif;
           color: #96a2ac;
@@ -165,9 +206,6 @@
     }
   }
 }
-
-
-
 
 
 
