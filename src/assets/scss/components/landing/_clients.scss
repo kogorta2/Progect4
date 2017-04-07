@@ -1,0 +1,109 @@
+.clients{
+  margin-bottom: 120px;
+  h1{
+    padding-bottom: 5px;
+  }
+  h6{
+    padding-bottom: 25px;
+  }
+  .clients-slider{
+    .slick-dots{
+      position: relative;
+      transform: translateY(40px);
+      button{
+        background:#36a8ff;
+        border-radius:4px;
+        display:inline-block;
+        width:9px;
+        height:9px;
+        margin:0 7px;
+        text-indent: 100%;
+        overflow: hidden;
+      }
+      .slick-active{
+        button{
+          background: #ffaf36;
+        }
+      }
+    }
+    .slider-box-content{
+      display: inline-block;
+      overflow: hidden;
+      width: 33%;
+      height: 30%;
+      padding-right: 70px;
+      .inner-wrapper{
+        display: inline-block;
+        padding: 2px;
+        text-align: left;
+        p{
+          @include breakpoint(1024px down){
+            transform: matrix(0.9,0,0,0.9,0,0);
+          }
+          @include breakpoint(775px down){
+            transform: matrix(0.8,0,0,0.8,0,0);
+          }
+          @include breakpoint(425px down){
+            transform: matrix(0.7,0,0,0.7,0,0);
+          }
+        }
+        .quote-1 {
+          padding: 30px 0;
+          position: relative;
+          &:before{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top:0;
+              left:0;
+              content: url("../img/quote_icon.png");
+          }
+        }
+        .quote-2 {
+          padding: 30px 0;
+          position: relative;
+          &:before{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top:0;
+            left:0;
+            content: url("../img/quote_icon1.png");
+          }
+        }
+        .quote-3 {
+          padding: 30px 0;
+          position: relative;
+          &:before{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top:0;
+            left:0;
+            content: url("../img/quote_icon2.png");
+          }
+        }
+        .wrapper-inline-block{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          @include breakpoint(1024px down){
+            flex-direction: column;
+            justify-content:center;
+            h5,p{
+              transform: matrix(0.7,0,0,0.7,0,0);
+            }
+
+
+          }
+          .family{
+            margin-left: 10%;
+          }
+          p{
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

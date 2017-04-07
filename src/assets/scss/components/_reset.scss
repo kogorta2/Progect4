@@ -12,6 +12,7 @@ body,html {
 p {
   font: 400 14px/28px 'Open Sans', sans-serif;
   color: #585858;
+  margin: 0;
 }
 
 a {
@@ -73,11 +74,38 @@ li {
 }
 
 .button {
-  font: 500 13px/24px 'Raleway', sans-serif;
-  color: #ffffff;
-  text-transform: uppercase;
   width: 126px;
   height: 43px;
-  background: #0e111a;
+  background: rgb(14,17,26);
+  &:hover{
+    background: rgba(14,17,26,0.7);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  }
+  &:active{
+    background: rgba(14,17,26,0.5);
+    box-shadow: 0 0 5px rgba(0,0,0,1);
+  }
+  a{
+    font: 500 13px/24px 'Raleway', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+  }
 }
-
+.burger-button{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 46px;
+  min-width: 46px;
+  position: relative;
+  z-index: 2;
+  background: #36a8ff;
+  color:#ffffff;
+  @include breakpoint(1025px up){
+    display:none;
+  }
+  &:before{
+    content:"\f0c9";
+    font:700 24px/1 'FontAwesome';
+  }
+}

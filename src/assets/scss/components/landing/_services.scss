@@ -1,199 +1,83 @@
-//.header {
-//  position: relative;
-//  background: #eaeff3;
-//  width: 100%;
-//  min-height: 46px;
-//  margin-bottom: 20px;
-//  .menu {
-//    position: relative;
-//    width: 100%;
-//    min-height: 46px;
-//    height: inherit;
-//    .row{
-//      min-height: 46px;
-//      height: inherit;
-//      li{
-//        position: relative;
-//        padding-right: 5%;
-//        &:first-child{
-//          a {
-//            color:#171b1f;
-//          }
-//        }
-//        .li-border{
-//          position: absolute;
-//          width: 1px;
-//          height: 46px;
-//          background: #dde4ea;
-//          top:-11px;
-//          left: -20%;
-//        }
-//      }
-//    }
-//  }
-//  .wrapper-background{
-//    position: relative;
-//    width: 100%;
-//    min-height: 46px;
-//    height: inherit;
-//    .row{
-//      min-height: 46%;
-//      height: inherit;
-//      li{
-//        display: block;
-//        min-width: 100%;
-//      }
-//    }
-//  }
-//  .wrapper-for-button{
-//    position: relative;
-//    width: 100%;
-//    min-height: 46px;
-//    height: inherit;
-//    z-index: 1;
-//    .wrapper{
-//      min-height: 46px;
-//      height: inherit;
-//      .button-for-menu{
-//        background: #36a8ff;
-//      }
-//    }
-//  }
-//  .sign{
-//    position: absolute;
-//    width: 100%;
-//    min-height: 46px;
-//    height: 100%;
-//    top: 0;
-//    left: 0;
-//    border-bottom: 1px solid #dde4ea;
-//    .flex-wrapper{
-//      display: flex;
-//      width: 100%;
-//      height: inherit;
-//      .hole{
-//        width: 1390px;
-//        flex: 10 6 auto;
-//        min-height: 46px;
-//        height: inherit;
-//      }
-//      .icon{
-//        width: 580px;
-//        min-width: 180px;
-//        background: #36a8ff;
-//        flex: 4 0 29.44%;
-//        min-height: 46px;
-//        height: inherit;
-//        .icon-key {
-//          padding-left: 50px;
-//          position: relative;
-//          a{color: #ffffff;}
-//          &:before {
-//            font-family: 'simple-line-icons', inherit;
-//            position: absolute;
-//            left: 25px;
-//            top: 5px;
-//            content: "\e08c";
-//            font-weight: 600;
-//            color:#ffffff;
-//          }
-//        }
-//      }
-//    }
-//  }
-//}
-//.contact {
-//  margin-bottom: 17px;
-//  .logo {
-//    padding-bottom: 4px;
-//    .fa {
-//      position: absolute;
-//      left: 0;
-//      top: 0;
-//      font-family: 'FontAwesome', inherit;
-//      font-size: 65%;
-//      color: #ffaf36;
-//      font-weight: 100;
-//    }
-//    .logo-style {
-//      color: #414950;
-//      position: relative;
-//      padding-top: 15px;
-//      font-size: 22px;
-//      span {
-//        color: inherit;
-//        font-weight: 300;
-//        font-size: 22px;
-//      }
-//    }
-//  }
-//  .call-us-today,
-//  .mail-us-today {
-//    padding-bottom: 4px;
-//    .box {
-//      position: relative;
-//      width: 100%;
-//      height: 100%;
-//      h3 {
-//        position: relative;
-//        width: 100%;
-//        height: 100%;
-//        top: 0;
-//        text-transform: lowercase;
-//        position: relative;
-//        padding-left: 20%;
-//        white-space: nowrap;
-//        line-height: 13px;
-//        &:first-child {
-//          font: 600 11px/24px 'Open Sans', sans-serif;
-//          color: #96a2ac;
-//          text-transform: uppercase;
-//          letter-spacing: 0.5px;
-//        }
-//      }
-//
-//
-//    }
-//  }
-//  .call-us-today{
-//    .box{
-//      .fa{
-//        position: absolute;
-//        width: 100%;
-//        height: 100%;
-//        left:0%;
-//        top:0%;
-//        font-size: 300%;
-//        color:#ffaf36;
-//      }
-//    }
-//  }
-//  .mail-us-today{
-//    .box{
-//      h3{
-//        padding-left: 35%;
-//      }
-//      .icon-envelope-letter{
-//        position: absolute;
-//        width: 100%;
-//        height: 100%;
-//        left:16%;
-//        top:20%;
-//        font-size: 200%;
-//        color:#ffaf36;
-//      }
-//      .gray-border{
-//        position: absolute;
-//        width: 1px;
-//        top:-20px;
-//        left:8%;
-//        min-height: 80px;
-//        background: #dde4ea;
-//      }
-//    }
-//  }
-//}
+.servises{
+  margin-bottom: 100px;
+  .servises-about{
+    .servises-about-content{
+      display: inline-block;
+      text-align: right;
+      vertical-align: middle;
+      padding: 45px 15px 40px 30px;
+      h1{
+        padding-bottom: 5px;
+      }
+      h6{
+        padding-bottom: 25px;
+      }
+      p{
+        padding-bottom: 30px;
+      }
+      .button{
+        a{
+          color: #fff;
+        }
+      }
+    }
+  }
+  .servises-icons{
+    .img-wrapper{
+      padding: 15px 0;
+      display: inline-block;
+      .img {
+        background: #0e111a;
+        position: relative;
+        width: auto;
+        img {
+          position: relative;
+          opacity: 0.439;
+        }
+        &:before {
+          content:"";
+          position: absolute;
+          top:0;
+          left:0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(135deg, rgba(55, 168, 255, 0.5) 1%, rgba(255, 175, 55, 0.5) 100%, rgba(255, 175, 55, 0.5) 100%, rgba(255, 175, 55, 0.5) 100%);
+        }
+        .gradient {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding:5px;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top:0;
+          left: 0;
+          @include breakpoint(500px down){
+            transform: matrix(0.85,0,0,0.85,0,0);
+          }
+          @include breakpoint(425px down){
+            transform: matrix(0.65,0,0,0.65,0,0);
+          }
+          @include breakpoint(375px down){
+            transform: matrix(0.50,0,0,0.50,0,0);
+          }
+          .icon-wrapper {
+            padding:20px 0 10px 0;
+          }
+          h5 {
+            color: rgba(255,255,255,0.5);
+            letter-spacing: 3px;
+            font-weight: 900;
+            white-space: pre;
 
+          }
+        }
+      }
+    }
+  }
+}
 
 
 

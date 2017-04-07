@@ -1,0 +1,114 @@
+.footer-background{
+  background: #2a2b2c;
+  width: 100%;
+  position: relative;
+  min-height: 220px;
+
+  .footer-logo-background{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 220px;
+    .blue-background-box{
+      background: #36a8ff;
+      flex:10 6 39%;
+    }
+    .hole-box{
+      flex: 4 0 61%;
+    }
+  }
+  .footer-menu{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    .row{
+     height: 100%;
+      .box {
+        display: inline-block;
+        position: relative;
+        .fa {
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-family: 'FontAwesome', inherit;
+          font-size: 65%;
+          color: #2a2b2c;
+          font-weight: 100;
+        }
+        .logo-style {
+          color: #fff;
+          position: relative;
+          padding-top: 15px;
+          font-size: 22px;
+          span {
+            color: inherit;
+            font-weight: 300;
+            font-size: 22px;
+          }
+        }
+      }
+      ul{
+        display: inline-block;
+        text-align: right;
+        @include breakpoint(1024px down){
+          position: absolute;
+          min-width:120px ;
+          background: #2a2b2c;
+          top: 0;
+          right:0;
+          height: 220px;
+          &.click-off{
+            display: none;
+          }
+          &.click-on{
+            right: 46px;
+          }
+          li{
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+      li{
+        padding-left:5%;
+        a{
+          font:semibold 13px/1 'Open Sans', sans-serif;
+          color:#fff;
+        }
+      }
+      .reserved{
+        display: inline-block;
+        text-align: right;
+        .move-box{
+          padding: 2px;
+          span{
+            font:400 14px/1 'Open Sans', sans-serif;
+            color: #8a8a8a;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .icon-box{
+        display: inline-block;
+        text-align: right;
+        .move-box{
+          .fa{
+            font-size: 20px;
+            &.fa-facebook{
+              color:#ffffff;
+            }
+            &.fa-google-plus{
+              color: #777777;
+            }
+            &.fa-twitter{
+              color: #8a8a8a;
+            }
+          }
+        }
+      }
+    }
+  }
+}

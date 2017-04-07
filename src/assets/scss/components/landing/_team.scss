@@ -1,0 +1,91 @@
+.team{
+  position: relative;
+  .our-team-layer{
+    position: relative;
+    padding-bottom: 245px;
+    .heading-wrapper{
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      padding-bottom: 25px;
+    }
+    .team-img-box{
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      &:hover{
+        .hidden-block{
+         margin-bottom:0px;
+          @include breakpoint(775px down){
+            display: inline-block;
+          }
+        }
+      }
+
+      .hover-wrapper{
+        position: relative;
+      }
+      .hidden-block{
+        position: absolute;
+        width: 100%;
+        bottom:0;
+        right: 0;
+        margin-bottom:-140px;
+        transition: margin-bottom ease-in-out 0.5s;
+        transition: display ease-in-out 0.1s;
+        @include breakpoint(775px down){
+         display: none;
+        }
+        .blue-box{
+          width: 100%;
+          height: 70px;
+          background: rgba(54,168,255,0.9);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          span{
+            color:#fff;
+            font: semibold 13px/1 'Raleway', sans-serif;
+            text-transform: uppercase;
+          }
+          h6{
+            color:#fff;
+          }
+        }
+        .yellow-box{
+          width: 100%;
+          height: 70px;
+          background: rgba(255,175,54,0.9);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .fa{
+            color:#fff;
+            font-size: 25px;
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+  .solution-layer{
+    position: absolute;
+    bottom:0;
+    right:0;
+    width: 100%;
+    height: 245px;
+    background: #eaeff3;
+    .row{
+      height: 100%;
+      .solutions-content{
+        @include  breakpoint(425px down){
+          transform: matrix(0.9,0,0,0.9,0,0);
+        }
+      }
+      h4{
+        font-size: 20px;
+      }
+    }
+  }
+}
