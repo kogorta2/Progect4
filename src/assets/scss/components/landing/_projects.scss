@@ -17,6 +17,16 @@
   }
   .layer-text{
     position: relative;
+    .pyramid{
+      img{
+        display: inline-block;
+        position: absolute;
+        transform:translateY(-100%);
+        &:nth-child(2){
+          margin-left: 85px;
+        }
+      }
+    }
     .projects-content-wrapper{
       padding: 90px 50px 40px 0px;
       h1{
@@ -87,13 +97,10 @@
          .rectangle-wrapper{
            display: inline-block;
            padding: 5px;
-           //position: relative;
-
            .rectangle{
              overflow: hidden;
              position: relative;
              &:hover{
-
                &:before{
                  background-color: rgba(255,175,54,0.8);
                }
@@ -108,9 +115,7 @@
                z-index: 2;
                background-color:rgba(255,175,54,0) ;
                transition: background ease-in-out 0.2s;
-
              }
-
              &.first{
                width: 387px;
                height: 387px;
